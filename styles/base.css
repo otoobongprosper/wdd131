@@ -3,6 +3,8 @@
   --secondary-color: #0f0890;
   --accent-color: #ff6600;
   --text-color: #0d0a0a;
+  --border-color: rgb(139, 138, 138);
+  --tert-color: rgb(230, 230, 220);
   --font-family: "Roboto", sans-serif;
 }
 
@@ -52,7 +54,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(79, 239, 30);
+  color: var(--accent-color);
 }
 
 header input[type="text"] {
@@ -70,7 +72,15 @@ header input[type="text"]::placeholder {
 }
 
 header input[type="text"]:hover::placeholder {
-  color: rgb(79, 239, 30);
+  color: var(--accent-color);
+}
+
+main{
+  
+  margin: 20px;
+  padding: 10px;
+  background-color:var(--tert-color);
+  border-radius: 15px;
 }
 h1 {
   font-size: 4rem;
@@ -80,14 +90,14 @@ h1 {
 }
 .container {
   display: grid;
-  grid-template-columns: 1fr 0.5fr;
+  grid-template-columns: 1fr 0.6fr;
   grid-template-rows: auto;
 }
 
 .card {
   /* text-align: center; */
   padding: 0;
-  border: 1px solid rgb(139, 138, 138);
+  border: 1px solid var(--border-color);
   border-radius: 10px;
   margin: 10px;
 }
