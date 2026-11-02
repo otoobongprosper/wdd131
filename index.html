@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="otobong"
+      content="building a basic layout for a dynamic web fundamentals course"
+    />
+    <title>WDD 131 | Dynamic Web Fundamentals | Oto-obong Inyang</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+
+      <nav>
+        <a href="https://www.linkedin.com/in/otobong-inyang/" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://byupw.instructure.com/." target="_blank">Canvas</a>
+        <a
+          href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+          target="_blank"
+          >Scripture</a
+        >
+        <input type="text" placeholder="Final Project" />
+      </nav>
+    </header>
+
+    <main>
+      <h1>Oto-obong Inyang</h1>
+
+      <div class="container">
+        <section class="card">
+          <h2>About Me</h2>
+          <div class="card-content">
+            <p>
+              My name is Oto-obong Inyang from Nigeria. I am a student at
+              Brigham Young University-Idaho, pursuing a degree in Web Design
+              and Development. I have a passion for creating visually appealing
+              and user-friendly websites that provide an exceptional user
+              experience. I love to travel and I wish to travel out of my
+              country someday. I am excited to learn and grow in this field, and
+              I look forward to applying my skills to real-world projects.
+            </p>
+            <figure>
+              <img
+                src="images/profile pics.jpg"
+                alt="Oto-obong Inyang profile picture"
+              />
+            </figure>
+          </div>
+          <div class="country-info">
+            <h3>Nigeria</h3>
+
+            <figure>
+              <img src="images/nigeria.jpg" alt="Nigerian flag" />
+              <figcaption>Nigerian Flag</figcaption>
+            </figure>
+
+            <p>
+              Nigeria is a country located in West Africa, known for its diverse
+              culture, rich history, and natural resources. It is the most
+              populous country in Africa, with over 200 million people, and has
+              a vibrant economy driven by oil and gas production, agriculture,
+              and services. Nigeria is also home to many ethnic groups,
+              languages, and religions, making it a culturally rich and diverse
+              nation. Despite facing challenges such as political instability
+              and economic inequality, Nigeria continues to be a significant
+              player on the African continent and in the global community.
+            </p>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Web Dev Resources</h2>
+          <ul>
+            <li><a href="https://dev.to">Dev.to Community</a></li>
+            <li>
+              <a href="https://www.smashingmagazine.com">Smashing Magazine</a>
+            </li>
+            <li><a href="https://css-tricks.com">CSS-Tricks</a></li>
+            <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+            <li><a href="https://www.udemy.com">Udemy</a></li>
+            <li>
+              <a href="https://loremipsum.io">Lorem Piscum Image Placeholder</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="current-date"></span> | Oto-obong Inyang | Akwa Ibom
+        State | Nigeria
+      </p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>
