@@ -16,6 +16,7 @@
 
 body {
   width: 100%;
+  max-width: 986px;
   font-family: var(--font-family);
   margin: 0 auto;
 }
