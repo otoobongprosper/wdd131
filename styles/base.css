@@ -58,23 +58,6 @@ nav a:hover {
   color: var(--accent-color);
 }
 
-header input[type="text"] {
-  width: 250px;
-  font-size: 18px;
-  padding: 10px 15px;
-  outline: none;
-  border: none;
-  background-color: black;
-}
-
-header input[type="text"]::placeholder {
-  color: var(--primary-color);
-}
-
-header input[type="text"]:hover::placeholder {
-  color: var(--accent-color);
-}
-
 main{
   
   margin: 20px;
@@ -82,12 +65,14 @@ main{
   background-color:var(--tert-color);
   border-radius: 15px;
 }
+
 h1 {
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
 }
+
 .container {
   display: grid;
   grid-template-columns: 1fr 0.6fr;
