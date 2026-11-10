@@ -71,12 +71,12 @@ nav {
   
 }
 
-.navigation li a:hover {
+nav a:hover {
   color: var(--text-color);
   background-color: var(--primary-color);
 }
 
-.navigation li a:active {
+nav a:active {
   color: yellow;
 }
 /* Mobile View ***************/
