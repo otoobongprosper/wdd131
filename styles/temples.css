@@ -35,6 +35,7 @@ header span {
   font-weight: bold;
   padding: 3px;
 }
+
 nav {
   flex-basis: 100%;
   display: flex;
@@ -68,7 +69,6 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  
 }
 
 nav a:hover {
@@ -79,6 +79,7 @@ nav a:hover {
 nav a:active {
   color: yellow;
 }
+
 /* Mobile View ***************/
 #menu {
   display: block;
