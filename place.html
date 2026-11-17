@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria</title>
+    <meta name="description" content="The page is a place where one lives, have visited, or wish to visit. It has specific functional and developmental requirements for the page's layout, design, and content.">
+    <meta name="author" content="Oto-obong Inyang">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;800&display=swap"
+        rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div class="outskirt">
+            <picture>
+                <source media="(min-width: 1000px )" srcset="images/naija-pics-large.webp">
+                <source media="(min-width: 500px)" srcset="images/naija-pics-medium.webp">
+                <img src="images/naija-pics-small.webp" alt="Government House" width="1500" height="750">
+            </picture>
+        </div>
+
+        <div class="country-info">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Region:</strong> West Africa</li>
+                <li><strong>Area:</strong> 923,768 km²</li>
+                <li><strong>Population:</strong> Approx 237.5 million</li>
+                <li><strong>Official Language:</strong> English</li>
+                <li><strong>Capital City:</strong>Abuja</li>
+                <li><strong>Currency:</strong> Naira (₦)</li>
+                <li><strong>Time Zone:</strong> UTC+1</li>
+                <li><strong>International Calling Code:</strong> +234</li>
+                <li><strong>Internet(TLD):</strong> .ng</li>
+            </ul>
+        </div>
+
+        <div class="country-weather">
+            <div class="weather-heading">
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="Weather Icon" width="50" height="50">
+            </div>
+            
+            <ul>
+                <li><strong>Temperature:</strong> 30°C</li>
+                <li><strong>Wind:</strong> 12 km/h SW</li>
+                <li><strong>Wind Chill:</strong> <span id="chill">N/A</span></li>
+                <li><strong>Condition:</strong> Partly Cloudy</li>
+                <li><strong>Humidity:</strong> 75%</li>
+                <li><strong>Precipitation:</strong> 2mm</li>
+                <li><strong>Visibility:</strong> 10km</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p> &copy;  <span id="current-year"></span> 
+           🍀 Oto-obong Inyang 🍀
+            Nigeria
+        </p>
+        <p>
+        Last Modified <span id="last-modified"></span>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@media screen  and (min-width: 650px) {
+    main{
+        position: relative;
+        display: block;
+    }
+
+   h2{
+    text-align: left;
+    color: white;
+    background-color: green;
+    margin-left: -25px;
+    padding: 15px;
+    width: 180px;
+   }
+
+    .weather-heading h2::after {
+        content: " ⛅ ";
+        margin-left: 15px;
+    }
+
+    .weather-heading img{
+        display: none;
+    }
+   
+    .country-info{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 320px;
+        background-color: white;
+        z-index: 1;
+    }
+
+    .country-weather{
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        width: 250px;
+        background-color: white;
+        gap: 2px;
+    }
+}
