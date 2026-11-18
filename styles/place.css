@@ -122,16 +122,15 @@ li{
 
 
 footer {
-    background-color: var(--secondary-color); 
     font-size: 1rem;
     font-weight: bold;
-    /* padding: 10px 0 0 0; */
+    padding: 10px 0 0 0;
    
 } 
 
 p {
     
-    
+    background-color: var(--secondary-color);
     color: var(--primary-color);
     padding: 8px;
 }
