@@ -134,8 +134,8 @@ function createTempleCard(templeList){
     area.innerHTML = `<span class = "label">Size:</span> ${temple.area} Sqr ft`;
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.templeName} Temple`);
-    img.setAttribute("width", "300");
-    img.setAttribute("height", "150");
+    img.setAttribute("width", "400");
+    img.setAttribute("height", "250");
 
     if (i === 0) {
       img.setAttribute("fetchpriority", "high");
