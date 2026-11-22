@@ -116,8 +116,9 @@ const temples = [
 // create and display temple cards
 function createTempleCard(templeList){
 
+  const album = document.querySelector(".album");
   // cleared previous dislay cards
-  document.querySelector(".album").innerHTML = "";
+  album.innerHTML = "";
 
   templeList.forEach((temple, i) =>{
 
@@ -152,7 +153,7 @@ function createTempleCard(templeList){
     card.appendChild(img);
 
 
-    document.querySelector(".album").appendChild(card);
+    album.appendChild(card);
   })
 }
 
@@ -180,8 +181,8 @@ document.querySelector("#new").addEventListener("click", () => {
 
 // temple larger than 90,000 sqr ft
 document.querySelector("#large").addEventListener("click", () =>{
-  const largeTemple = temples.filter(temple => Number(temple.area) >
-   90000);
+  const largeTemple = temples.filter(temple => temple.area
+    > 90000);
 
    createTempleCard(largeTemple);
 })
