@@ -1,0 +1,155 @@
+:root {
+  --primary-color: white;
+  --secondary-color: #0f0890;
+  --accent-color: #ff6600;
+  --text-color: #0d0a0a;
+  --border-color: rgb(241, 234, 234);
+  --tertiary-color: rgb(230, 230, 220);
+  --font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--secondary-color);
+  margin-top: 3px;
+  padding: 20px;
+  color: var(--primary-color);
+  gap: 1rem;
+}
+
+header span {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 3px;
+}
+
+nav {
+  flex-basis: 100%;
+  display: flex;
+  /* width: 100%; */
+}
+
+.navigation {
+  display: none;
+  list-style-type: none;
+  margin: 0 auto;
+  max-width: 760px; 
+}
+
+.navigation li {
+  display: block;
+  list-style: none;
+}
+
+.navigation a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation.show {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+nav a:hover {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}
+
+nav a:active {
+  color: yellow;
+}
+
+
+/* Mobile View ***************/
+#menu {
+  display: block;
+  margin-left: auto;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+
+#menu::before {
+  content: "≡";
+}
+
+#menu.show::before {
+  content: "X";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%;
+  max-width: 100%;
+  margin: 0 auto; */
+  padding: 10px;
+  gap: 2rem;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+section{
+  padding: 15px;
+  background-color: var(--border-color);
+  border-radius: 6px;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.album img {
+  background-color: var(--tertiary-color);
+  margin-top: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 30px rgba(17, 17, 17, 0.8);
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+footer {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+footer p {
+  text-align: center;
+  font-size: small;
+  padding: 3px;
+}
