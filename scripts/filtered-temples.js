@@ -77,36 +77,36 @@ const temples = [
   {
     templeName: "Mesa Arizona",
     location: "Mesa, Arizona, United States",
-    dedicated: "1927, Octocber, 23",
-    area: "6968",
+    dedicated: "1927, October, 23",
+    area: 6968,
     imageUrl:"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mesa-arizona/400x250/mesa_arizona_temple_main.jpeg"
   },
   {
     templeName: "Anchorage Alaska",
     location: "Anchorage, Alaska, United States",
     dedicated: "1999, January, 9",
-    area: "2787",
+    area: 2787,
     imageUrl:"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/anchorage-alaska/400x250/anchorage-temple-lds-253274-wallpaper.jpg"
   },
 {
     templeName: "Accra Ghana",
     location: "Accra, Greater Accra, Ghana",
     dedicated: "2004, January, 11",
-    area: "1626 ",
+    area: 1626,
     imageUrl:"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-758797-wallpaper.jpg"
   },
   {
-    templeName: "Barranquilla Columbia",
+    templeName: "Barranquilla Colombia",
     location: "Barranquilla, Colombia",
     dedicated: "2018, December, 9",
-    area: " 2355 ",
+    area: 2355,
     imageUrl:"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/400x250/2-Barranquilla-Columblia-Temple-2135201.jpg"
   },
   {
     templeName: "Belem Brazil",
     location: "Belém, Para, Brazil",
     dedicated: "2022, November, 20",
-    area: " 2664",
+    area: 2664,
     imageUrl:"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/belem-brazil/400x250/belem_brazil_temple_exterior.jpg"
   }
   
@@ -151,7 +151,7 @@ document.querySelector("#home").addEventListener("click", () => {
   createTempleCard(temples);
 })
 
-// filter temples built before 1900
+// filter temples built before 1990
 document.querySelector("#old").addEventListener("click", () => {
   const oldTemple = temples.filter(temple => Number(temple.dedicated.substring(0,4))
    < 1990);
