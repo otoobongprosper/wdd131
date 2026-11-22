@@ -119,7 +119,7 @@ function createTempleCard(templeList){
   // cleared previous dislay cards
   document.querySelector(".album").innerHTML = "";
 
-  templeList.forEach(temple =>{
+  templeList.forEach((temple, i) =>{
 
     let card = document.createElement("section");
     let name = document.createElement("h2");
@@ -134,15 +134,23 @@ function createTempleCard(templeList){
     area.innerHTML = `<span class = "label">Size:</span> ${temple.area} Sqr ft`;
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.templeName} Temple`);
-    img.setAttribute("loading", "lazy");
     img.setAttribute("width", "300");
     img.setAttribute("height", "150");
+
+    if (i === 0) {
+      img.setAttribute("fetchpriority", "high");
+      img.setAttribute("loading", "eager");
+    }
+    else {
+      img.setAttribute("loading", "lazy");
+    }
 
     card.appendChild(name);
     card.appendChild(location);
     card.appendChild(dedicated);
     card.appendChild(area);
     card.appendChild(img);
+
 
     document.querySelector(".album").appendChild(card);
   })
